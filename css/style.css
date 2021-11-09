@@ -1,0 +1,308 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  background-image: url("../img/headerbackground.jpeg");
+  background-size: cover;
+  text-align: center;
+  border: 3px black solid;
+}
+
+.brooklyn99logo {
+  height: 7vw;
+  width: 20vw;
+}
+
+.menu {
+  background-image: url("../img/blue_concrete.jpeg");
+  background-size: cover;
+  border: 1px black solid;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 18vw;
+}
+
+.body {
+  background-image: url("../img/backgroundz.jpeg");
+  align-content: center;
+}
+
+.footer {
+  background-image: url("../img/blue_concrete.jpeg");
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1.5vw;
+  color: yellow;
+  text-align: center;
+  width: 100%;
+}
+
+.bigpicture {
+  display: block;
+  border: 2px solid black;
+  width: 75vw;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vw;
+
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+  width: 75vw;
+  font-size: 3vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.description0 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 1vw;
+  width: 75vw;
+  border: 1px solid black;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.description1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  padding: 1vw;
+  width: 75vw;
+  border: 1px solid black;
+  font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10vw;
+}
+
+.Menutext {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15vh;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 4vw;
+  width: 99%;
+  height: 6vw;
+  border: 1px solid yellow;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  background-color: rgba(33, 33, 33, 0.83);
+}
+
+.menulink {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  font-size: 3vw;
+  width: 99%;
+  height: 4vw;
+  border: 1px solid yellow;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  background-color: rgba(33, 33, 33, 0.83);
+  display: block;
+}
+
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vw;
+  font-size: 4vw;
+  width: 80vw;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif
+}
+ .seasonlink {
+   display: block;
+   width: 15vw;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 2vw;
+   font-size: 3vw;
+   text-align: center;
+ }
+
+ h3 {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10vw;
+   margin-bottom: 5vw;
+   font-size: 4vw;
+   width: 80vw;
+   text-align: center;
+   font-family: "Times New Roman", Times, serif
+ }
+
+ .jake {
+   width: 36vw;
+   margin-left: 2.5vw;
+   margin-right: auto;
+   border: 2px solid black;
+   font-size: 2vw;
+   margin-bottom: 2vw;
+   display: block;
+   float: left;
+   padding: 0.5vw;
+ }
+
+ .amy {
+   width: 36vw;
+   margin-right: 2.5vw;
+   margin-left: auto;
+   border: 2px solid black;
+   font-size: 2vw;
+   margin-bottom: 2vw;
+   display: block;
+   float: right;
+   padding: 0.5vw;
+ }
+
+.charles {
+  width: 36vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  border: 2px solid black;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  display: block;
+  float: left;
+  padding: 0.5vw;
+}
+
+.terry {
+   width: 36vw;
+   margin-right: 2.5vw;
+   margin-left: auto;
+   border: 2px solid black;
+   font-size: 2vw;
+   margin-bottom: 2vw;
+   display: block;
+   float: right;
+   padding: 0.5vw;
+}
+
+.rosa {
+  width: 36vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  border: 2px solid black;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  display: block;
+  float: left;
+  padding: 0.5vw;
+}
+
+.hitchcock {
+   width: 36vw;
+   margin-right: 2.5vw;
+   margin-left: auto;
+   border: 2px solid black;
+   font-size: 2vw;
+   margin-bottom: 2vw;
+   display: block;
+   float: right;
+   padding: 0.5vw;
+}
+
+.scully {
+  width: 36vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  border: 2px solid black;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  display: block;
+  float: left;
+  padding: 0.5vw;
+}
+
+.gina {
+  width: 36vw;
+  margin-right: 2.5vw;
+  margin-left: auto;
+  border: 2px solid black;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  display: block;
+  float: right;
+  padding: 0.5vw;
+}
+
+.holt {
+  width: 36vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  border: 2px solid black;
+  font-size: 1.6vw;
+  margin-bottom: 2vw;
+  display: block;
+  float: left;
+  padding: 0.5vw;
+}
+
+.body2 {
+    background-image: url("../img/backgroundz.jpeg");
+    align-content: center;
+}
+
+.header2 {
+  background-image: url("../img/headerbackground.jpeg");
+  background-size: cover;
+  text-align: center;
+  border: 3px black solid;
+}
+
+.footer2 {
+  background-image: url("../img/blue_concrete.jpeg");
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 1.5vw;
+  color: yellow;
+  text-align: center;
+  width: 100%;
+}
+
+.actorvideo {
+  width: 40vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  font-size: 4vw;
+  margin-bottom: 4vw;
+  display: block;
+  float: left;
+  clear: left;
+  padding: 0.5vw;
+  border: 2px solid black;
+}
+
+.actorvideo2 {
+  width: 40vw;
+  margin-left: 2.5vw;
+  margin-right: auto;
+  font-size: 4vw;
+  margin-bottom: 4vw;
+  display: block;
+  float: right;
+  clear: right;
+  padding: 0.5vw;
+  border: 2px solid black;
+}
