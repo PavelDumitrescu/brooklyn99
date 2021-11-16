@@ -13,7 +13,7 @@
 }
 
 .brooklyn99logo {
-  height: 7vw;
+  height: 7vh;
   width: 20vw;
 }
 
@@ -96,7 +96,7 @@ h1 {
   padding-bottom: 1vw;
   font-size: 4vw;
   width: 99%;
-  height: 6vw;
+  height: 6vh;
   border: 1px solid yellow;
   font-weight: bold;
   color: yellow;
@@ -112,7 +112,7 @@ h1 {
   padding-bottom: 0.5vw;
   font-size: 3vw;
   width: 99%;
-  height: 4vw;
+  height: 4vh;
   border: 1px solid yellow;
   font-weight: bold;
   color: yellow;
