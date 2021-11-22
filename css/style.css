@@ -1,3 +1,4 @@
+/*Först använder jag * för att styla alla element, jag sätter margin, padding och border till 0 */
 * {
   margin: 0px;
   padding: 0px;
@@ -12,11 +13,18 @@
   border: 3px black solid;
 }
 
+/* Detta är loggan på headern, jag använder relativa enheter som
+vw (viewport width) och vh (viewport height) för att göra allt responsivt */
+
 .brooklyn99logo {
   height: 9vh;
   width: 20vw;
 }
 
+/* Menyns position är fixed som gör så att den följer med när man skrollar,
+detta gör så att menyn och dess inehåll alltid är tillgängligt. Men detta
+gör också så att menyn ligger utanför grid, därför har jag inte använt grid
+för att ange menyns position */
 .menu {
   background-image: url("../img/blue_concrete.jpeg");
   background-size: cover;
@@ -42,6 +50,7 @@
   width: 100%;
 }
 
+/* Första stora bilden */
 .bigpicture {
   display: block;
   border: 2px solid black;
@@ -57,11 +66,13 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 5vw;
-  margin-bottom: 10vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
   width: 75vw;
-  font-size: 3vw;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  text-decoration: underline;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .description0 {
@@ -73,7 +84,6 @@ h1 {
   width: 75vw;
   border: 1px solid black;
   font-size: 2vw;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .description1 {
@@ -84,17 +94,17 @@ h1 {
   width: 75vw;
   border: 1px solid black;
   font-size: 2vw;
-  font-family: "Times New Roman", Times, serif;
   margin-bottom: 10vw;
 }
 
+/* Texten där det står "menu" högst uppe på menyn */
 .Menutext {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15vh;
   padding-top: 2vh;
   padding-bottom: 1vh;
-  font-size: 4vh;
+  font-size: 4.5vh;
   width: 99%;
   height: 6vh;
   border: 1px solid yellow;
@@ -104,13 +114,16 @@ h1 {
   background-color: rgba(33, 33, 33, 0.83);
 }
 
+/* klassen som jag använder för att styla alla länkarna på menyn, jag
+ har display block eftersom anchor element är inline i vanliga fall,
+  jag vill inte att de ska placeras på samma rad*/
 .menulink {
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vh;
   padding-top: 2vh;
   padding-bottom: 3vh;
-  font-size: 3vh;
+  font-size: 4vh;
   width: 99%;
   height: 4vh;
   border: 1px solid yellow;
@@ -119,25 +132,34 @@ h1 {
   text-align: center;
   background-color: rgba(33, 33, 33, 0.83);
   display: block;
+  text-decoration: none;
 }
 
 h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vw;
-  font-size: 4vw;
+  font-size: 6vw;
   width: 80vw;
   text-align: center;
-  font-family: "Times New Roman", Times, serif
+  text-decoration: underline;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+/* Länkarna i den oordnade listan */
  .seasonlink {
    display: block;
-   width: 15vw;
+   width: 25vw;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 2vw;
-   font-size: 3vw;
+   font-size: 6vw;
    text-align: center;
+   text-decoration: none;
+   font-weight: bold;
+   color: yellow;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
  }
 
  h3 {
@@ -148,9 +170,16 @@ h2 {
    font-size: 4vw;
    width: 80vw;
    text-align: center;
-   font-family: "Times New Roman", Times, serif
+   text-decoration: underline;
+   color: yellow;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
  }
 
+/* Här är klasserna för bilderna på karaktärerna och deras texter, bilden och texten
+som tillhör samma karaktär har samma klass. Varannan bild är på den högra sidan, jag
+gör detta genom att använda float: right; och float: left;. Jag tror att jag kunde ha
+använt enbart två olika klasser, en för sådant som ska vara på höger och en för vänster
+men jag gjorde det onödigt ineffektivt istället*/
  .jake {
    width: 36vw;
    margin-left: 2.5vw;
@@ -158,7 +187,6 @@ h2 {
    border: 2px solid black;
    font-size: 2vw;
    margin-bottom: 2vw;
-   display: block;
    float: left;
    padding: 0.5vw;
  }
@@ -170,7 +198,6 @@ h2 {
    border: 2px solid black;
    font-size: 2vw;
    margin-bottom: 2vw;
-   display: block;
    float: right;
    padding: 0.5vw;
  }
@@ -182,7 +209,6 @@ h2 {
   border: 2px solid black;
   font-size: 2vw;
   margin-bottom: 2vw;
-  display: block;
   float: left;
   padding: 0.5vw;
 }
@@ -194,7 +220,6 @@ h2 {
    border: 2px solid black;
    font-size: 2vw;
    margin-bottom: 2vw;
-   display: block;
    float: right;
    padding: 0.5vw;
 }
@@ -206,7 +231,6 @@ h2 {
   border: 2px solid black;
   font-size: 2vw;
   margin-bottom: 2vw;
-  display: block;
   float: left;
   padding: 0.5vw;
 }
@@ -218,7 +242,6 @@ h2 {
    border: 2px solid black;
    font-size: 2vw;
    margin-bottom: 2vw;
-   display: block;
    float: right;
    padding: 0.5vw;
 }
@@ -230,7 +253,6 @@ h2 {
   border: 2px solid black;
   font-size: 2vw;
   margin-bottom: 2vw;
-  display: block;
   float: left;
   padding: 0.5vw;
 }
@@ -242,7 +264,6 @@ h2 {
   border: 2px solid black;
   font-size: 2vw;
   margin-bottom: 2vw;
-  display: block;
   float: right;
   padding: 0.5vw;
 }
@@ -254,11 +275,11 @@ h2 {
   border: 2px solid black;
   font-size: 1.6vw;
   margin-bottom: 2vw;
-  display: block;
   float: left;
   padding: 0.5vw;
 }
 
+/* Här börjar styling för sådant som finns på min andra sida */
 .body2 {
     background-image: url("../img/backgroundz.jpeg");
     align-content: center;
@@ -282,27 +303,56 @@ h2 {
 }
 
 .actorvideo {
-  width: 40vw;
+  width: 43vw;
   margin-left: 2.5vw;
   margin-right: auto;
   font-size: 4vw;
   margin-bottom: 4vw;
-  display: block;
   float: left;
   clear: left;
   padding: 0.5vw;
   border: 2px solid black;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .actorvideo2 {
-  width: 40vw;
+  width: 43vw;
   margin-left: 2.5vw;
-  margin-right: auto;
+  margin-right: 2.5vw;
   font-size: 4vw;
   margin-bottom: 4vw;
-  display: block;
   float: right;
   clear: right;
   padding: 0.5vw;
   border: 2px solid black;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* En media query som ändrar dimensionerna på länkarna som ligger
+ på menyn när fönstrets storlek blir under 750 pixlar, detta löste
+ problemet att man inte kunde se hela länkens text när fönstret blev
+för smalt */
+@media screen and (max-width: 750px) {
+  .menulink {
+    font-size: 2.4vh;
+    padding-top: 2vh;
+    height: 2vh;
+  }
+}
+
+/* Länken som tar dig tillbaka till första sidan */
+.home {
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  font-size: 3vh;
+  width: 20vw;
+  height: 4vh;
+  border: 1px solid yellow;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  background-color: rgba(33, 33, 33, 0.83);
+  float: left;
 }

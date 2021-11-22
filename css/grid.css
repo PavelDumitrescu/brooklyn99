@@ -1,8 +1,18 @@
+/* Jag har skapat en grid som täcker hela sidan med sex kolumner
+där varje kolumn är 1/6 av sidans bredd, när sidan blir mindre
+blir kolumnerna mindre. Sidan har en rad som 10vh (10% av viewport höjd)
+som jag använder för sidans header, det finns också en rad som är 1fr
+(fractional unit),den raden omfattar all höjd i gridden som är mellan första och sista
+raden samt blir större vartefter jag lägger in mer inehåll, jag har
+använt den för textens huvuddel och till sist har jag en rad som är
+12vh hög som jag använder för sidan footer. Sidans meny har jag lagt
+utanför grid och påverkas inte av detta*/
+
 .container {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 10vh 1fr 8vh;
+  grid-template-rows: 10vh 1fr 12vh;
 }
 
 .header {
@@ -20,10 +30,10 @@
   grid-row: 3/4;
 }
 
-.menu {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-}
+/* Jag använder dessa för min andra sida, alla delarna tar upp mer plats
+eftersom min andra sida har ingen meny och jag vill inte ha tomrum där menyn
+var. Skillnaden är att dessa börjar från första kolumnens start, från linje 1
+och täcker därför hela sidan. */
 
 .header2 {
   grid-column: 1/-1;

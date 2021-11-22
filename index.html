@@ -7,11 +7,22 @@
       <title>Brooklyn99</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <body>
+<!-- I div med klass container lägger jag allt i som ska ordnas med grid -->
       <div class="container">
+<!-- Jag har skapat en div och en klass för varje del av min sida så att jag
+kan orda dem med css grid och styla dem, det finns en header, menu, body och footer.
+Jag kan dock inte ordna grejerna som är i dessa delar av sidan med grid eftersom de
+inte är direkta barn till container-->
         <div class="header">
           <img class="brooklyn99logo" src="img/brooklyn99logo.png" alt="Brooklyn99">
         </div>
         <div class="menu">
+<!-- I menyn har jag lagt in ett P element för en text där det står meny sedan
+ har jag lagt in länkar inom sidan och till andra sidor med a (anchor) element,
+alla länkar har fått samma klass eftersom de ska stylas på samma sätt. På länken
+som tar dig till IMDB har jag lagt in target="_blank" för att det ska öppnas i
+ett nytt fönster så att sidan inte stängs ned-->
           <p class="Menutext">Menu</p>
           <a class="menulink" href="#intro">Intro</a>
           <a class="menulink" href="#seasons">Seasons</a>
@@ -20,6 +31,12 @@
           <a class="menulink" href="brooklynfunny.html">Funny</a>
         </div>
         <div class="body">
+<!-- Här är sidans huvuddel där allt det viktiga finns.
+Jag har lagt in flera bilder med img element, texter med p element och
+en oordnad lista med länkar till de olika säsongerna med ett ul element
+sedan har jag givit allt egna klasser så att jag enkelt kan styla med css.
+Jag har också givit vissa element ett id så jag kan länka till dem i min
+meny för att göra navigering enklare.-->
           <img class="bigpicture" src="img/bigpicture.jpg" alt="brooklyn99 cast">
           <h1 id="intro">Description</h1>
           <p class="description0">Brooklyn Nine-Nine is a comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.</p>
@@ -36,6 +53,8 @@
             <li><a class="seasonlink" href="https://www.imdb.com/title/tt2467372/episodes?season=8" target="_blank">season 8</a></li>
           </ul>
           <h3 id="characters">Brooklyn Nine-Nine main characters</h3>
+<!-- Här har jag lagt in en bild och en text för varje viktig karaktär i serien,
+bilden och texten har samma klass och ska därför stylas på samma sätt -->
           <img class="jake" src="img/Jake.jpeg" alt="Jake Peralta">
           <P class="jake">Jacob "Jake" Jeffrey Peralta is the main protagonist of the show. He was a cocky and immature but talented NYPD detective stationed in Brooklyn's 99th Precinct. "Jacob Peralta is my best detective. He likes putting away bad guys and he solving puzzles. The only puzzle he hasn't solved is how to grow up."Peralta is a cop that has never been one to follow the rules too closely. Perhaps because he has the best arrest record among his colleagues, he's been enabled - if not indulged - throughout his entire career. That is, until the precinct gets a new commanding officer, Captain Raymond Holt, who reminds this hotshot cop to respect the badge.</p>
           <img class="amy" src="img/Amy.jpeg" alt="Amy Santiago">
@@ -61,3 +80,5 @@
           <p>Adress: lookbehindyou street, blahblah avenue</p>
         </div>
       </div>
+    </body>
+  </html>
