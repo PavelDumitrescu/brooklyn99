@@ -334,11 +334,18 @@ men jag gjorde det onödigt ineffektivt istället*/
  på menyn när fönstrets storlek blir under 750 pixlar, detta löste
  problemet att man inte kunde se hela länkens text när fönstret blev
 för smalt. */
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .menulink {
-    font-size: 2vh;
-    padding-top: 2vh;
+    font-size: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    height: 1vh;
+  }
+  .Menutext {
+    font-size: 1.5vh;
     height: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
   }
 }
 
