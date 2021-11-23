@@ -331,10 +331,10 @@ men jag gjorde det onödigt ineffektivt istället*/
 }
 
 /* En media query som ändrar dimensionerna på länkarna som ligger
- på menyn när fönstrets storlek blir under 750 pixlar, detta löste
+ på menyn när fönstrets storlek blir under 1100 pixlar, detta löste
  problemet att man inte kunde se hela länkens text när fönstret blev
 för smalt. */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   .menulink {
     font-size: 1.5vh;
     padding-top: 1vh;
